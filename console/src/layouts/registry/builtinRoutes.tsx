@@ -3,7 +3,7 @@
  *
  * Importing self-registers all builtins into routeRegistry. MainLayout's
  * `useRoutes()` snapshot returns them. Plugin routes are registered via
- * `NovaPaw.route.add(...)` into the same registry and treated uniformly.
+ * `QwenPaw.route.add(...)` into the same registry and treated uniformly.
  *
  * Lazy components use `lazyImportWithRetry` inline; eager pages (Chat,
  * CodingPage) are passed as ComponentType directly. The `/` redirect is a
@@ -54,6 +54,7 @@ const BackupsPage = lazyImportWithRetry("../../pages/Settings/Backups");
 const PluginManagerPage = lazyImportWithRetry(
   "../../pages/Settings/PluginManager",
 );
+const EmbeddingsPage = lazyImportWithRetry("../../pages/Settings/Embeddings");
 
 /**
  * "/" lands here. Waits for useSyncCodingMode to populate the store before
@@ -120,6 +121,11 @@ export const BUILTIN_ROUTES: Route[] = [
     id: "core.plugin-manager",
     path: "/plugin-manager",
     component: PluginManagerPage,
+  },
+  {
+    id: "core.embeddings",
+    path: "/embeddings",
+    component: EmbeddingsPage,
   },
 ];
 

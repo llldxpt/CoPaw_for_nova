@@ -1030,13 +1030,6 @@ PROVIDER_ZHIPU_INTL_CODINGPLAN = OpenAIProvider(
     provider_variant="coding_plan_intl",
 )
 
-PROVIDER_NOVAPAW = OpenAIProvider(
-    id="novapaw-local",
-    name="NovaPaw Local",
-    is_local=True,
-    require_api_key=False,
-)
-
 PROVIDER_OPENAI = OpenAIProvider(
     id="openai",
     name="OpenAI",
@@ -1330,6 +1323,46 @@ PROVIDER_MIMO_TOKENPLAN = OpenAIProvider(
     freeze_url=True,
 )
 
+# Nova AI Providers
+# -------------------------------------------------------
+
+NOVA_AI_MODELS: List[ModelInfo] = [
+    ModelInfo(
+        id="novachat",
+        name="NovaChat",
+        supports_image=True,
+        supports_video=False,
+        supports_multimodal=True,
+        probe_source="documentation",
+    ),
+]
+
+PROVIDER_NOVA_AI = OpenAIProvider(
+    id="nova-ai",
+    name="Nova AI",
+    is_local=True,
+    base_url="http://127.0.0.1:1234/v1",
+    api_key="",
+    api_key_prefix="",
+    models=NOVA_AI_MODELS,
+    freeze_url=True,
+    require_api_key=False,
+    support_connection_check=True,
+)
+
+PROVIDER_NOVA_AI_CLUSTER = OpenAIProvider(
+    id="nova-ai-cluster",
+    name="Nova AI (Cluster)",
+    is_local=True,
+    base_url="http://127.0.0.1:15050/v1",
+    api_key="",
+    api_key_prefix="",
+    models=NOVA_AI_MODELS,
+    freeze_url=True,
+    require_api_key=False,
+    support_connection_check=True,
+)
+
 
 class ProviderManager:  # pylint: disable=too-many-public-methods
     """A manager class to handle all providers,
@@ -1372,7 +1405,6 @@ class ProviderManager:  # pylint: disable=too-many-public-methods
                 pass
 
     def _init_builtins(self):
-        self._add_builtin(PROVIDER_NOVAPAW)
         self._add_builtin(PROVIDER_OLLAMA)
         self._add_builtin(PROVIDER_LMSTUDIO)
         self._add_builtin(PROVIDER_OPENROUTER)
@@ -1405,6 +1437,8 @@ class ProviderManager:  # pylint: disable=too-many-public-methods
         self._add_builtin(PROVIDER_VOLCENGINE_CN)
         self._add_builtin(PROVIDER_VOLCENGINE_CN_CODINGPLAN)
         self._add_builtin(PROVIDER_MIMO_TOKENPLAN)
+        self._add_builtin(PROVIDER_NOVA_AI)
+        self._add_builtin(PROVIDER_NOVA_AI_CLUSTER)
 
     def _add_builtin(self, provider: Provider):
         self.builtin_providers[provider.id] = provider
@@ -2318,7 +2352,10 @@ class ProviderManager:  # pylint: disable=too-many-public-methods
                 },
             )
 
-        local_models = self.get_provider("novapaw-local").extra_models
+        provider = self.get_provider("novapaw-local")
+        if provider is None:
+            return
+        local_models = provider.extra_models
         model_id = local_models[0].id if local_models else None
         if model_id is None:
             return

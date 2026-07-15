@@ -144,6 +144,13 @@ export default defineConfig(({ mode }) => {
               id.includes("node_modules/@ant-design/") ||
               id.includes("node_modules/@agentscope-ai/")
             ) {
+              if (
+                id.includes("node_modules/@antv/") ||
+                id.includes("node_modules/@ant-design/plots/") ||
+                id.includes("node_modules/@ant-design/charts/")
+              ) {
+                return undefined;
+              }
               return "ui-vendor";
             }
             // i18n
@@ -152,19 +159,6 @@ export default defineConfig(({ mode }) => {
               id.includes("node_modules/react-i18next/")
             ) {
               return "i18n-vendor";
-            }
-            // Markdown rendering
-            if (
-              id.includes("node_modules/react-markdown/") ||
-              id.includes("node_modules/remark-gfm/") ||
-              id.includes("node_modules/rehype") ||
-              id.includes("node_modules/remark") ||
-              id.includes("node_modules/unified/") ||
-              id.includes("node_modules/mdast") ||
-              id.includes("node_modules/hast") ||
-              id.includes("node_modules/micromark")
-            ) {
-              return "markdown-vendor";
             }
             // Drag and drop
             if (id.includes("node_modules/@dnd-kit/")) {

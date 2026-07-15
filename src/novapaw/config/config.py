@@ -1872,6 +1872,18 @@ def _default_builtin_tools() -> Dict[str, BuiltinToolConfig]:
             ),
             icon="🔀",
         ),
+        "search_web": BuiltinToolConfig(
+            name="search_web",
+            enabled=True,
+            description="Search the web via local SearXNG meta-search engine",
+            icon="🔎",
+        ),
+        "text_to_speech": BuiltinToolConfig(
+            name="text_to_speech",
+            enabled=True,
+            description="Convert text to speech via local NovaMax TTS engine",
+            icon="🔊",
+        ),
     }
 
     # Merge dynamically registered tools from plugins

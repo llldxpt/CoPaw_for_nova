@@ -29,6 +29,8 @@ from .shell import execute_shell_command
 from .send_file import send_file_to_user
 from .browser_control import browser_use
 from .web_search import web_search, web_fetch
+from .search_web import search_web
+from .text_to_speech import text_to_speech
 from .desktop_screenshot import desktop_screenshot
 from .view_media import view_image, view_video
 from .get_current_time import get_current_time, set_user_timezone
@@ -85,4 +87,6 @@ __all__ = [
     "spawn_subagent",
     "materialize_skill",
     "ast_search",
+    "search_web",
+    "text_to_speech",
 ]

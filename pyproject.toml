@@ -105,7 +105,6 @@ build-backend = "setuptools.build_meta"
 
 [project.scripts]
 novapaw = "novapaw.cli.main:cli"
-novapaw = "novapaw.cli.main:cli"
 
 # Optional doctor plugins: callable (DoctorRunContext) -> list[str]
 # [project.entry-points."novapaw.doctor"]
