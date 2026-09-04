@@ -887,7 +887,10 @@ class ProviderManager(
                 },
             )
 
-        local_models = self.get_provider("novapaw-local").extra_models
+        provider = self.get_provider("novapaw-local")
+        if provider is None:
+            return
+        local_models = provider.extra_models
         model_id = local_models[0].id if local_models else None
         if model_id is None:
             return

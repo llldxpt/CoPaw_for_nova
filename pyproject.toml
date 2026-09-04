@@ -118,7 +118,6 @@ build-backend = "setuptools.build_meta"
 
 [project.scripts]
 novapaw = "novapaw.cli.main:cli"
-novapaw = "novapaw.cli.main:cli"
 novapawmail-mcp = "novapawmail_mcp.__main__:main"
 
 # Optional doctor plugins: callable (DoctorRunContext) -> list[str]

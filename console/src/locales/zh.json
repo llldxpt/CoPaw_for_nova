@@ -150,6 +150,7 @@
     "debug": "调试",
     "plugins": "插件",
     "backups": "备份",
+    "embeddings": "嵌入",
     "pluginManager": "插件管理"
   },
   "os": {
@@ -4518,5 +4519,38 @@
         "description": "运行结构化、可持续的多步骤任务。"
       }
     }
+  },
+  "embeddings": {
+    "title": "嵌入配置",
+    "description": "配置向量嵌入用于语义搜索和记忆功能。",
+    "novaEmbeddingDesc": "本地 Nova Embedding 服务，运行在 1278 端口",
+    "novaEmbeddingClusterDesc": "Nova Embedding Cluster 服务，用于分布式部署",
+    "baseUrl": "基础 URL",
+    "modelName": "模型名称",
+    "modelNamePlaceholder": "例如：Nova Embedding",
+    "modelNameRequired": "模型名称是必需的",
+    "dimensions": "向量维度",
+    "dimensionsTip": "嵌入向量的维度数量",
+    "maxInputLength": "最大输入长度",
+    "maxInputLengthTip": "输入文本的最大 token 数",
+    "maxBatchSize": "最大批处理大小",
+    "maxBatchSizeTip": "单次请求中批处理的文本数量上限",
+    "enableCache": "启用缓存",
+    "enableCacheTip": "缓存嵌入结果以避免重复计算",
+    "useDimensions": "使用自定义维度",
+    "useDimensionsTip": "向 API 请求指定的维度（如果支持）",
+    "active": "已激活",
+    "activated": "已激活",
+    "activate": "激活",
+    "activateSuccess": "{{name}} 已激活",
+    "activateFailed": "激活 Provider 失败",
+    "save": "保存配置",
+    "saveSuccess": "配置已保存",
+    "saveFailed": "保存配置失败",
+    "loadError": "加载嵌入配置失败",
+    "testConnection": "测试连接",
+    "testSuccess": "连接成功！",
+    "testFailed": "连接失败",
+    "loading": "正在加载嵌入配置..."
   }
 }

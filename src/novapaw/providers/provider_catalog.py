@@ -202,13 +202,6 @@ PROVIDER_ZHIPU_INTL_CODINGPLAN = OpenAIProvider(
     provider_variant="coding_plan_intl",
 )
 
-PROVIDER_NOVAPAW = OpenAIProvider(
-    id="novapaw-local",
-    name="NovaPaw Local",
-    is_local=True,
-    require_api_key=False,
-)
-
 PROVIDER_OPENAI = OpenAIProvider(
     id="openai",
     name="OpenAI",
@@ -503,6 +496,47 @@ PROVIDER_MIMO_TOKENPLAN = OpenAIProvider(
     provider_variant="token_plan",
 )
 
+# -------------------------------------------------------
+# Nova AI Providers
+# -------------------------------------------------------
+
+NOVA_AI_MODELS: List[ModelInfo] = [
+    ModelInfo(
+        id="novachat",
+        name="NovaChat",
+        supports_multimodal=True,
+        supports_image=True,
+        supports_video=False,
+        probe_source="documentation",
+    ),
+]
+
+PROVIDER_NOVA_AI = OpenAIProvider(
+    id="nova-ai",
+    name="Nova AI",
+    is_local=True,
+    base_url="http://127.0.0.1:1234/v1",
+    api_key="",
+    api_key_prefix="",
+    models=NOVA_AI_MODELS,
+    freeze_url=True,
+    require_api_key=False,
+    support_connection_check=True,
+)
+
+PROVIDER_NOVA_AI_CLUSTER = OpenAIProvider(
+    id="nova-ai-cluster",
+    name="Nova AI (Cluster)",
+    is_local=True,
+    base_url="http://127.0.0.1:15050/v1",
+    api_key="",
+    api_key_prefix="",
+    models=NOVA_AI_MODELS,
+    freeze_url=True,
+    require_api_key=False,
+    support_connection_check=True,
+)
+
 PROVIDER_MIMO = MiMoProvider(
     id="mimo",
     name="Xiaomi MiMo",
@@ -518,7 +552,8 @@ PROVIDER_MIMO = MiMoProvider(
 
 
 BUILTIN_PROVIDERS: tuple[Provider, ...] = (
-    PROVIDER_NOVAPAW,
+    PROVIDER_NOVA_AI,
+    PROVIDER_NOVA_AI_CLUSTER,
     PROVIDER_OLLAMA,
     PROVIDER_LMSTUDIO,
     PROVIDER_OPENROUTER,
@@ -636,7 +671,8 @@ __all__ = [
     "PROVIDER_OPENAI",
     "PROVIDER_OPENAI_RESPONSE",
     "PROVIDER_OPENROUTER",
-    "PROVIDER_NOVAPAW",
+    "PROVIDER_NOVA_AI",
+    "PROVIDER_NOVA_AI_CLUSTER",
     "PROVIDER_SILICONFLOW_CN",
     "PROVIDER_SILICONFLOW_INTL",
     "PROVIDER_VOLCENGINE_CN",

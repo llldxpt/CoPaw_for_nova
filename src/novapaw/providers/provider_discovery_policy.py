@@ -46,6 +46,18 @@ _CATALOG_PLAN = ProviderDiscoveryPolicy(
 )
 
 BUILTIN_DISCOVERY_POLICIES: dict[str, ProviderDiscoveryPolicy] = {
+    "nova-ai": ProviderDiscoveryPolicy(
+        "unsupported",
+        sync_mode="disabled",
+        requires_auth=False,
+        reason="Local Nova AI models are statically defined.",
+    ),
+    "nova-ai-cluster": ProviderDiscoveryPolicy(
+        "unsupported",
+        sync_mode="disabled",
+        requires_auth=False,
+        reason="Local Nova AI Cluster models are statically defined.",
+    ),
     "novapaw-local": ProviderDiscoveryPolicy(
         "unsupported",
         sync_mode="disabled",

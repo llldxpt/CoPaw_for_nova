@@ -3,7 +3,7 @@
  *
  * Importing self-registers all builtins into routeRegistry. MainLayout's
  * `useRoutes()` snapshot returns them. Plugin routes are registered via
- * `NovaPaw.route.add(...)` into the same registry and treated uniformly.
+ * `QwenPaw.route.add(...)` into the same registry and treated uniformly.
  *
  * Lazy components use `lazyImportWithRetry` inline. The `/` redirect is a
  * named route with a tiny DefaultRedirect component so routeRegistry has a
@@ -47,6 +47,7 @@ const VoiceTranscriptionPage = lazyImportWithRetry(
 const AgentsPage = lazyImportWithRetry("../../pages/Settings/Agents");
 const DebugPage = lazyImportWithRetry("../../pages/Settings/Debug");
 const BackupsPage = lazyImportWithRetry("../../pages/Settings/Backups");
+const EmbeddingsPage = lazyImportWithRetry("../../pages/Settings/Embeddings");
 const AppCenterPage = lazyImportWithRetry("../../pages/AppCenter");
 const MarketplacePage = lazyImportWithRetry("../../pages/Market");
 const FilesPage = lazyImportWithRetry("../../pages/Files");
@@ -106,6 +107,7 @@ export const BUILTIN_ROUTES: Route[] = [
   },
   { id: "core.debug", path: "/debug", component: DebugPage },
   { id: "core.backups", path: "/backups", component: BackupsPage },
+  { id: "core.embeddings", path: "/embeddings", component: EmbeddingsPage },
   { id: "core.marketplace", path: "/market", component: MarketplacePage },
   // Deep-link / refresh target: `/apps/<id>` also lands on the App Center,
   // which opens the app inline (with the “← App Center” bar) from the URL.

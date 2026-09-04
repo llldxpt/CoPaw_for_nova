@@ -3,7 +3,7 @@
  *
  * Importing this module self-registers all builtins into menuRegistry, so the
  * Sidebar's `useMenuItems()` snapshot returns them on first render. Plugins
- * register via `NovaPaw.menu.add(...)` which lands in the same registry, so
+ * register via `QwenPaw.menu.add(...)` which lands in the same registry, so
  * Sidebar treats core + plugin items uniformly.
  *
  * ── Naming convention ──────────────────────────────────────────────────────
@@ -279,6 +279,15 @@ export const BUILTIN_MENU: MenuItem[] = [
     icon: SparkSaveLine,
     route: "core.backups",
     order: 80,
+  },
+  {
+    id: "core.embeddings",
+    location: "primary.settings",
+    parentId: "core.settings-group",
+    label: navLabel("nav.embeddings", "Embeddings"),
+    icon: SparkDataLine,
+    route: "core.embeddings",
+    order: 85,
   },
   {
     id: "core.voice-transcription",

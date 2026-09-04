@@ -150,6 +150,7 @@
     "debug": "Debug",
     "plugins": "Plugins",
     "backups": "Backups",
+    "embeddings": "Embeddings",
     "pluginManager": "Plugin Manager"
   },
   "os": {
@@ -4500,5 +4501,38 @@
         "description": "Run a structured, persistent multi-step task."
       }
     }
+  },
+  "embeddings": {
+    "title": "Embedding Configuration",
+    "description": "Configure embedding models for semantic search and memory functionality.",
+    "novaEmbeddingDesc": "Local Nova Embedding service running on port 1278",
+    "novaEmbeddingClusterDesc": "Nova Embedding Cluster service for distributed deployments",
+    "baseUrl": "Base URL",
+    "modelName": "Model Name",
+    "modelNamePlaceholder": "e.g. Nova Embedding",
+    "modelNameRequired": "Model name is required",
+    "dimensions": "Dimensions",
+    "dimensionsTip": "Number of dimensions for the embedding vector",
+    "maxInputLength": "Max Input Length",
+    "maxInputLengthTip": "Maximum number of tokens for input text",
+    "maxBatchSize": "Max Batch Size",
+    "maxBatchSizeTip": "Maximum number of texts to batch in one request",
+    "enableCache": "Enable Cache",
+    "enableCacheTip": "Cache embeddings to avoid recomputation",
+    "useDimensions": "Use Custom Dimensions",
+    "useDimensionsTip": "Request specific dimensions from the API (if supported)",
+    "active": "Active",
+    "activated": "Activated",
+    "activate": "Activate",
+    "activateSuccess": "{{name}} activated successfully",
+    "activateFailed": "Failed to activate provider",
+    "save": "Save Configuration",
+    "saveSuccess": "Settings saved successfully",
+    "saveFailed": "Failed to save settings",
+    "loadError": "Failed to load embedding config",
+    "testConnection": "Test Connection",
+    "testSuccess": "Connection successful",
+    "testFailed": "Connection failed",
+    "loading": "Loading embedding configuration..."
   }
 }

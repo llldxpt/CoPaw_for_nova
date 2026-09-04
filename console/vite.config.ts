@@ -181,19 +181,8 @@ export default defineConfig(({ command, mode }) => {
             ) {
               return "i18n-vendor";
             }
-            // Markdown rendering
-            if (
-              id.includes("node_modules/react-markdown/") ||
-              id.includes("node_modules/remark-gfm/") ||
-              id.includes("node_modules/rehype") ||
-              id.includes("node_modules/remark") ||
-              id.includes("node_modules/unified/") ||
-              id.includes("node_modules/mdast") ||
-              id.includes("node_modules/hast") ||
-              id.includes("node_modules/micromark")
-            ) {
-              return "markdown-vendor";
-            }
+            // Markdown rendering kept in main bundle to avoid
+            // cross-chunk Object.defineProperty init errors.
             // Drag and drop
             if (id.includes("node_modules/@dnd-kit/")) {
               return "dnd-vendor";
