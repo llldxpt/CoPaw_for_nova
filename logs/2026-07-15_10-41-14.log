@@ -1,0 +1,93 @@
+2026-07-15 10:41:14 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 10:41:14 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 10:41:14 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 10:41:14 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 10:41:14 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 10:41:14 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 10:41:17 | INFO | bm25_index.py:369 | load | Loaded 1 docs from C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\keyword_index\bm25_default_regex_7748e1d5a050_v1.pkl
+2026-07-15 10:41:17 | INFO | local_file_store.py:117 | load | Loaded 1 chunks from C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: index_update_loop
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: resource_watch_loop
+2026-07-15 10:41:17 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: index_update_loop
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: resource_watch_loop
+2026-07-15 10:41:17 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: index_update_loop
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: resource_watch_loop
+2026-07-15 10:41:17 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: index_update_loop
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: resource_watch_loop
+2026-07-15 10:41:17 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: index_update_loop
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: resource_watch_loop
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_store:default is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\default\\memory', 'C:\\Users\\Nova\\.novapaw\\workspaces\\default\\digest'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_catalog:resource is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\default\\resource'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_store:default is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\QwenPaw_QA_Agent_0.2\\memory', 'C:\\Users\\Nova\\.novapaw\\workspaces\\QwenPaw_QA_Agent_0.2\\digest'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_catalog:resource is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\QwenPaw_QA_Agent_0.2\\resource'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_store:default is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\PPT-Agent\\memory', 'C:\\Users\\Nova\\.novapaw\\workspaces\\PPT-Agent\\digest'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_catalog:resource is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\PPT-Agent\\resource'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_store:default is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\nova_studio_preset\\memory', 'C:\\Users\\Nova\\.novapaw\\workspaces\\nova_studio_preset\\digest'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_catalog:resource is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\nova_studio_preset\\resource'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_store:default is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\NovaPaw_QA_Agent_0.2\\memory', 'C:\\Users\\Nova\\.novapaw\\workspaces\\NovaPaw_QA_Agent_0.2\\digest'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_catalog:resource is up to date
+2026-07-15 10:41:17 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\NovaPaw_QA_Agent_0.2\\resource'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:17 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: index_update_loop
+2026-07-15 10:41:17 | INFO | application.py:201 | _start_one | Starting background job: resource_watch_loop
+2026-07-15 10:41:23 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_store:default is up to date
+2026-07-15 10:41:23 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\NovaPaw_QA_Agent\\memory', 'C:\\Users\\Nova\\.novapaw\\workspaces\\NovaPaw_QA_Agent\\digest'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:23 | INFO | init_changes.py:78 | execute | [InitChangesStep] file_catalog:resource is up to date
+2026-07-15 10:41:23 | INFO | watch_changes.py:88 | execute | Watching: ['C:\\Users\\Nova\\.novapaw\\workspaces\\NovaPaw_QA_Agent\\resource'] step=1000ms debounce=5000ms poll_delay=5000ms
+2026-07-15 10:41:50 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:50 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_store.py:185 | dump | Saved 1 chunks to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 10:41:51 | INFO | bm25_index.py:356 | dump | Saved 1 docs to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\keyword_index\bm25_default_regex_7748e1d5a050_v1.pkl
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 1 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | bm25_index.py:356 | dump | Saved 1 docs to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\keyword_index\bm25_default_regex_7748e1d5a050_v1.pkl
+2026-07-15 10:41:51 | INFO | local_file_graph.py:45 | dump | Saved 1 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 10:41:51 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\default.jsonl.zst

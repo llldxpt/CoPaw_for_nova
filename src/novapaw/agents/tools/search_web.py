@@ -1,5 +1,5 @@
-from ...runtime.tool_registry import tool_descriptor
 # -*- coding: utf-8 -*-
+from ...runtime.tool_registry import tool_descriptor
 """Web search tool backed by a local SearXNG instance."""
 
 import logging

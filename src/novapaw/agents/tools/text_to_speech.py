@@ -1,5 +1,5 @@
-from ...runtime.tool_registry import tool_descriptor
 # -*- coding: utf-8 -*-
+from ...runtime.tool_registry import tool_descriptor
 """Text-to-Speech tool backed by local NovaMax TTS API."""
 
 import logging

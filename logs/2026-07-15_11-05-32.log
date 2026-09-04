@@ -1,0 +1,759 @@
+2026-07-15 11:05:32 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 11:05:32 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 11:05:32 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 11:05:32 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 11:05:32 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 11:05:32 | INFO | application.py:33 | __init__ | Initializing ReMe Application v0.4.0.9
+2026-07-15 11:05:35 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | ERROR | application.py:205 | _start_one | Failed to start job:status: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\__main__.py", line 6, in <module>
+    cli()  # pylint: disable=no-value-for-parameter
+    └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x0000025B419E4CC0>
+           └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025B4193F380>
+         │    └ <function Group.invoke at 0x0000025B419E5BC0>
+         └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x0000025B42064550>
+           │               │       │       └ <function Command.invoke at 0x0000025B419E49A0>
+           │               │       └ <Command app>
+           │               └ <click.core.Context object at 0x0000025B42064550>
+           └ <function Group.invoke.<locals>._process_result at 0x0000025B41925760>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │   │      │    │           └ <click.core.Context object at 0x0000025B42064550>
+           │   │      │    └ <function app_cmd at 0x0000025B41F9C900>
+           │   │      └ <Command app>
+           │   └ <function Context.invoke at 0x0000025B419DFBA0>
+           └ <click.core.Context object at 0x0000025B42064550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │         └ ()
+           └ <function app_cmd at 0x0000025B41F9C900>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\cli\app_cmd.py", line 181, in app_cmd
+    uvicorn.run(
+    │       └ <function run at 0x0000025B41AB9C60>
+    └ <module 'uvicorn' from 'C:\\LingLong\\Dev\\Development\\NovaPaw\\env\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+    │      └ <function Server.run at 0x0000025B41AB94E0>
+    └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x0000025B41A7A520>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x0000025B41F3EF90>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x0000025B41AB9580>
+           │           └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           └ <function run at 0x0000025B3E854D60>
+
+  File "asyncio\runners.py", line 196, in run
+
+  File "asyncio\runners.py", line 119, in run
+
+  File "asyncio\base_events.py", line 712, in run_until_complete
+
+  File "asyncio\base_events.py", line 683, in run_forever
+
+  File "asyncio\base_events.py", line 2060, in _run_once
+
+  File "asyncio\events.py", line 89, in _run
+
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 239, in _start_service
+    await self._run_start_method(descriptor, service, is_reused)
+          │    │                 │           │        └ False
+          │    │                 │           └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799E9E50>
+          │    │                 └ ServiceDescriptor(name='memory_manager', service_class=<function Workspace._register_services.<locals>.<lambda> at 0x0000025B...
+          │    └ <function ServiceManager._run_start_method at 0x0000025B48F52840>
+          └ <novapaw.app.workspace.service_manager.ServiceManager object at 0x0000025B799E5F90>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 363, in _run_start_method
+    await start_fn()
+          └ <bound method ReMeLightMemoryManager.start of <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object ...
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\agents\memory\reme_light_memory_manager.py", line 145, in start
+    await self._reme.start()
+          │    │     └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          │    └ <reme.reme.ReMe object at 0x0000025B7A234CD0>
+          └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799E9E50>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function Application._start at 0x0000025B7A2731A0>
+          └ <reme.reme.ReMe object at 0x0000025B7A234CD0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 192, in _start
+    await self._start_one(c)
+          │    │          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A236850>
+          │    └ <function Application._start_one at 0x0000025B7A273240>
+          └ <reme.reme.ReMe object at 0x0000025B7A234CD0>
+> File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 202, in _start_one
+    await c.start()
+          │ └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A236850>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function BaseJob._start at 0x0000025B7A1D74C0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A236850>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 39, in _start
+    self.step_specs = [self._resolve_step(raw) for raw in self.step_configs]
+    │    │             │    │                             │    └ [{'backend': 'status_step'}]
+    │    │             │    │                             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A236850>
+    │    │             │    └ <function BaseJob._resolve_step at 0x0000025B7A1D7600>
+    │    │             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A236850>
+    │    └ []
+    └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A236850>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 51, in _resolve_step
+    raise ValueError(f"Unregistered backend '{config.backend}' of type '{ComponentEnum.STEP}'")
+                                              │      │                   │             └ <ComponentEnum.STEP: 'step'>
+                                              │      │                   └ <enum 'ComponentEnum'>
+                                              │      └ 'status_step'
+                                              └ ComponentConfig(backend='status_step')
+
+ValueError: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+2026-07-15 11:05:35 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\nova_studio_preset\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | ERROR | application.py:205 | _start_one | Failed to start job:status: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\__main__.py", line 6, in <module>
+    cli()  # pylint: disable=no-value-for-parameter
+    └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x0000025B419E4CC0>
+           └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025B4193F380>
+         │    └ <function Group.invoke at 0x0000025B419E5BC0>
+         └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x0000025B42064550>
+           │               │       │       └ <function Command.invoke at 0x0000025B419E49A0>
+           │               │       └ <Command app>
+           │               └ <click.core.Context object at 0x0000025B42064550>
+           └ <function Group.invoke.<locals>._process_result at 0x0000025B41925760>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │   │      │    │           └ <click.core.Context object at 0x0000025B42064550>
+           │   │      │    └ <function app_cmd at 0x0000025B41F9C900>
+           │   │      └ <Command app>
+           │   └ <function Context.invoke at 0x0000025B419DFBA0>
+           └ <click.core.Context object at 0x0000025B42064550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │         └ ()
+           └ <function app_cmd at 0x0000025B41F9C900>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\cli\app_cmd.py", line 181, in app_cmd
+    uvicorn.run(
+    │       └ <function run at 0x0000025B41AB9C60>
+    └ <module 'uvicorn' from 'C:\\LingLong\\Dev\\Development\\NovaPaw\\env\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+    │      └ <function Server.run at 0x0000025B41AB94E0>
+    └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x0000025B41A7A520>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x0000025B41F3EF90>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x0000025B41AB9580>
+           │           └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           └ <function run at 0x0000025B3E854D60>
+
+  File "asyncio\runners.py", line 196, in run
+
+  File "asyncio\runners.py", line 119, in run
+
+  File "asyncio\base_events.py", line 712, in run_until_complete
+
+  File "asyncio\base_events.py", line 683, in run_forever
+
+  File "asyncio\base_events.py", line 2060, in _run_once
+
+  File "asyncio\events.py", line 89, in _run
+
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 239, in _start_service
+    await self._run_start_method(descriptor, service, is_reused)
+          │    │                 │           │        └ False
+          │    │                 │           └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B79A316D0>
+          │    │                 └ ServiceDescriptor(name='memory_manager', service_class=<function Workspace._register_services.<locals>.<lambda> at 0x0000025B...
+          │    └ <function ServiceManager._run_start_method at 0x0000025B48F52840>
+          └ <novapaw.app.workspace.service_manager.ServiceManager object at 0x0000025B7993B530>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 363, in _run_start_method
+    await start_fn()
+          └ <bound method ReMeLightMemoryManager.start of <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object ...
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\agents\memory\reme_light_memory_manager.py", line 145, in start
+    await self._reme.start()
+          │    │     └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          │    └ <reme.reme.ReMe object at 0x0000025B7A24D130>
+          └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B79A316D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function Application._start at 0x0000025B7A2731A0>
+          └ <reme.reme.ReMe object at 0x0000025B7A24D130>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 192, in _start
+    await self._start_one(c)
+          │    │          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A358890>
+          │    └ <function Application._start_one at 0x0000025B7A273240>
+          └ <reme.reme.ReMe object at 0x0000025B7A24D130>
+> File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 202, in _start_one
+    await c.start()
+          │ └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A358890>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function BaseJob._start at 0x0000025B7A1D74C0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A358890>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 39, in _start
+    self.step_specs = [self._resolve_step(raw) for raw in self.step_configs]
+    │    │             │    │                             │    └ [{'backend': 'status_step'}]
+    │    │             │    │                             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A358890>
+    │    │             │    └ <function BaseJob._resolve_step at 0x0000025B7A1D7600>
+    │    │             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A358890>
+    │    └ []
+    └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A358890>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 51, in _resolve_step
+    raise ValueError(f"Unregistered backend '{config.backend}' of type '{ComponentEnum.STEP}'")
+                                              │      │                   │             └ <ComponentEnum.STEP: 'step'>
+                                              │      │                   └ <enum 'ComponentEnum'>
+                                              │      └ 'status_step'
+                                              └ ComponentConfig(backend='status_step')
+
+ValueError: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+2026-07-15 11:05:35 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\QwenPaw_QA_Agent_0.2\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | ERROR | application.py:205 | _start_one | Failed to start job:status: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\__main__.py", line 6, in <module>
+    cli()  # pylint: disable=no-value-for-parameter
+    └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x0000025B419E4CC0>
+           └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025B4193F380>
+         │    └ <function Group.invoke at 0x0000025B419E5BC0>
+         └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x0000025B42064550>
+           │               │       │       └ <function Command.invoke at 0x0000025B419E49A0>
+           │               │       └ <Command app>
+           │               └ <click.core.Context object at 0x0000025B42064550>
+           └ <function Group.invoke.<locals>._process_result at 0x0000025B41925760>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │   │      │    │           └ <click.core.Context object at 0x0000025B42064550>
+           │   │      │    └ <function app_cmd at 0x0000025B41F9C900>
+           │   │      └ <Command app>
+           │   └ <function Context.invoke at 0x0000025B419DFBA0>
+           └ <click.core.Context object at 0x0000025B42064550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │         └ ()
+           └ <function app_cmd at 0x0000025B41F9C900>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\cli\app_cmd.py", line 181, in app_cmd
+    uvicorn.run(
+    │       └ <function run at 0x0000025B41AB9C60>
+    └ <module 'uvicorn' from 'C:\\LingLong\\Dev\\Development\\NovaPaw\\env\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+    │      └ <function Server.run at 0x0000025B41AB94E0>
+    └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x0000025B41A7A520>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x0000025B41F3EF90>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x0000025B41AB9580>
+           │           └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           └ <function run at 0x0000025B3E854D60>
+
+  File "asyncio\runners.py", line 196, in run
+
+  File "asyncio\runners.py", line 119, in run
+
+  File "asyncio\base_events.py", line 712, in run_until_complete
+
+  File "asyncio\base_events.py", line 683, in run_forever
+
+  File "asyncio\base_events.py", line 2060, in _run_once
+
+  File "asyncio\events.py", line 89, in _run
+
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 239, in _start_service
+    await self._run_start_method(descriptor, service, is_reused)
+          │    │                 │           │        └ False
+          │    │                 │           └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799CF950>
+          │    │                 └ ServiceDescriptor(name='memory_manager', service_class=<function Workspace._register_services.<locals>.<lambda> at 0x0000025B...
+          │    └ <function ServiceManager._run_start_method at 0x0000025B48F52840>
+          └ <novapaw.app.workspace.service_manager.ServiceManager object at 0x0000025B79927360>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 363, in _run_start_method
+    await start_fn()
+          └ <bound method ReMeLightMemoryManager.start of <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object ...
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\agents\memory\reme_light_memory_manager.py", line 145, in start
+    await self._reme.start()
+          │    │     └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          │    └ <reme.reme.ReMe object at 0x0000025B79A08050>
+          └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799CF950>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function Application._start at 0x0000025B7A2731A0>
+          └ <reme.reme.ReMe object at 0x0000025B79A08050>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 192, in _start
+    await self._start_one(c)
+          │    │          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A233710>
+          │    └ <function Application._start_one at 0x0000025B7A273240>
+          └ <reme.reme.ReMe object at 0x0000025B79A08050>
+> File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 202, in _start_one
+    await c.start()
+          │ └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A233710>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function BaseJob._start at 0x0000025B7A1D74C0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A233710>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 39, in _start
+    self.step_specs = [self._resolve_step(raw) for raw in self.step_configs]
+    │    │             │    │                             │    └ [{'backend': 'status_step'}]
+    │    │             │    │                             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A233710>
+    │    │             │    └ <function BaseJob._resolve_step at 0x0000025B7A1D7600>
+    │    │             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A233710>
+    │    └ []
+    └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A233710>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 51, in _resolve_step
+    raise ValueError(f"Unregistered backend '{config.backend}' of type '{ComponentEnum.STEP}'")
+                                              │      │                   │             └ <ComponentEnum.STEP: 'step'>
+                                              │      │                   └ <enum 'ComponentEnum'>
+                                              │      └ 'status_step'
+                                              └ ComponentConfig(backend='status_step')
+
+ValueError: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+2026-07-15 11:05:35 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent_0.2\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | bm25_index.py:369 | load | Loaded 1 docs from C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\keyword_index\bm25_default_regex_7748e1d5a050_v1.pkl
+2026-07-15 11:05:35 | INFO | local_file_store.py:117 | load | Loaded 1 chunks from C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | ERROR | application.py:205 | _start_one | Failed to start job:status: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\__main__.py", line 6, in <module>
+    cli()  # pylint: disable=no-value-for-parameter
+    └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x0000025B419E4CC0>
+           └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025B4193F380>
+         │    └ <function Group.invoke at 0x0000025B419E5BC0>
+         └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x0000025B42064550>
+           │               │       │       └ <function Command.invoke at 0x0000025B419E49A0>
+           │               │       └ <Command app>
+           │               └ <click.core.Context object at 0x0000025B42064550>
+           └ <function Group.invoke.<locals>._process_result at 0x0000025B41925760>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │   │      │    │           └ <click.core.Context object at 0x0000025B42064550>
+           │   │      │    └ <function app_cmd at 0x0000025B41F9C900>
+           │   │      └ <Command app>
+           │   └ <function Context.invoke at 0x0000025B419DFBA0>
+           └ <click.core.Context object at 0x0000025B42064550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │         └ ()
+           └ <function app_cmd at 0x0000025B41F9C900>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\cli\app_cmd.py", line 181, in app_cmd
+    uvicorn.run(
+    │       └ <function run at 0x0000025B41AB9C60>
+    └ <module 'uvicorn' from 'C:\\LingLong\\Dev\\Development\\NovaPaw\\env\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+    │      └ <function Server.run at 0x0000025B41AB94E0>
+    └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x0000025B41A7A520>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x0000025B41F3EF90>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x0000025B41AB9580>
+           │           └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           └ <function run at 0x0000025B3E854D60>
+
+  File "asyncio\runners.py", line 196, in run
+
+  File "asyncio\runners.py", line 119, in run
+
+  File "asyncio\base_events.py", line 712, in run_until_complete
+
+  File "asyncio\base_events.py", line 683, in run_forever
+
+  File "asyncio\base_events.py", line 2060, in _run_once
+
+  File "asyncio\events.py", line 89, in _run
+
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 239, in _start_service
+    await self._run_start_method(descriptor, service, is_reused)
+          │    │                 │           │        └ False
+          │    │                 │           └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799EA990>
+          │    │                 └ ServiceDescriptor(name='memory_manager', service_class=<function Workspace._register_services.<locals>.<lambda> at 0x0000025B...
+          │    └ <function ServiceManager._run_start_method at 0x0000025B48F52840>
+          └ <novapaw.app.workspace.service_manager.ServiceManager object at 0x0000025B79892CF0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 363, in _run_start_method
+    await start_fn()
+          └ <bound method ReMeLightMemoryManager.start of <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object ...
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\agents\memory\reme_light_memory_manager.py", line 145, in start
+    await self._reme.start()
+          │    │     └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          │    └ <reme.reme.ReMe object at 0x0000025B7A142650>
+          └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799EA990>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function Application._start at 0x0000025B7A2731A0>
+          └ <reme.reme.ReMe object at 0x0000025B7A142650>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 192, in _start
+    await self._start_one(c)
+          │    │          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A231550>
+          │    └ <function Application._start_one at 0x0000025B7A273240>
+          └ <reme.reme.ReMe object at 0x0000025B7A142650>
+> File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 202, in _start_one
+    await c.start()
+          │ └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A231550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function BaseJob._start at 0x0000025B7A1D74C0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A231550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 39, in _start
+    self.step_specs = [self._resolve_step(raw) for raw in self.step_configs]
+    │    │             │    │                             │    └ [{'backend': 'status_step'}]
+    │    │             │    │                             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A231550>
+    │    │             │    └ <function BaseJob._resolve_step at 0x0000025B7A1D7600>
+    │    │             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A231550>
+    │    └ []
+    └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A231550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 51, in _resolve_step
+    raise ValueError(f"Unregistered backend '{config.backend}' of type '{ComponentEnum.STEP}'")
+                                              │      │                   │             └ <ComponentEnum.STEP: 'step'>
+                                              │      │                   └ <enum 'ComponentEnum'>
+                                              │      └ 'status_step'
+                                              └ ComponentConfig(backend='status_step')
+
+ValueError: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+2026-07-15 11:05:35 | INFO | local_file_store.py:185 | dump | Saved 1 chunks to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:35 | INFO | bm25_index.py:356 | dump | Saved 1 docs to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\keyword_index\bm25_default_regex_7748e1d5a050_v1.pkl
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 1 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | bm25_index.py:356 | dump | Saved 1 docs to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\keyword_index\bm25_default_regex_7748e1d5a050_v1.pkl
+2026-07-15 11:05:35 | INFO | local_file_graph.py:45 | dump | Saved 1 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 11:05:35 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\default\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:42 | ERROR | application.py:205 | _start_one | Failed to start job:status: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\__main__.py", line 6, in <module>
+    cli()  # pylint: disable=no-value-for-parameter
+    └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x0000025B419E4CC0>
+           └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025B4193F380>
+         │    └ <function Group.invoke at 0x0000025B419E5BC0>
+         └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x0000025B42064550>
+           │               │       │       └ <function Command.invoke at 0x0000025B419E49A0>
+           │               │       └ <Command app>
+           │               └ <click.core.Context object at 0x0000025B42064550>
+           └ <function Group.invoke.<locals>._process_result at 0x0000025B41925760>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │   │      │    │           └ <click.core.Context object at 0x0000025B42064550>
+           │   │      │    └ <function app_cmd at 0x0000025B41F9C900>
+           │   │      └ <Command app>
+           │   └ <function Context.invoke at 0x0000025B419DFBA0>
+           └ <click.core.Context object at 0x0000025B42064550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │         └ ()
+           └ <function app_cmd at 0x0000025B41F9C900>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\cli\app_cmd.py", line 181, in app_cmd
+    uvicorn.run(
+    │       └ <function run at 0x0000025B41AB9C60>
+    └ <module 'uvicorn' from 'C:\\LingLong\\Dev\\Development\\NovaPaw\\env\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+    │      └ <function Server.run at 0x0000025B41AB94E0>
+    └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x0000025B41A7A520>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x0000025B41F3EF90>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x0000025B41AB9580>
+           │           └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           └ <function run at 0x0000025B3E854D60>
+
+  File "asyncio\runners.py", line 196, in run
+
+  File "asyncio\runners.py", line 119, in run
+
+  File "asyncio\base_events.py", line 712, in run_until_complete
+
+  File "asyncio\base_events.py", line 683, in run_forever
+
+  File "asyncio\base_events.py", line 2060, in _run_once
+
+  File "asyncio\events.py", line 89, in _run
+
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 239, in _start_service
+    await self._run_start_method(descriptor, service, is_reused)
+          │    │                 │           │        └ False
+          │    │                 │           └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B7992BB60>
+          │    │                 └ ServiceDescriptor(name='memory_manager', service_class=<function Workspace._register_services.<locals>.<lambda> at 0x0000025B...
+          │    └ <function ServiceManager._run_start_method at 0x0000025B48F52840>
+          └ <novapaw.app.workspace.service_manager.ServiceManager object at 0x0000025B799EEC40>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 363, in _run_start_method
+    await start_fn()
+          └ <bound method ReMeLightMemoryManager.start of <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object ...
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\agents\memory\reme_light_memory_manager.py", line 145, in start
+    await self._reme.start()
+          │    │     └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          │    └ <reme.reme.ReMe object at 0x0000025B7A235310>
+          └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B7992BB60>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function Application._start at 0x0000025B7A2731A0>
+          └ <reme.reme.ReMe object at 0x0000025B7A235310>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 192, in _start
+    await self._start_one(c)
+          │    │          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A2325D0>
+          │    └ <function Application._start_one at 0x0000025B7A273240>
+          └ <reme.reme.ReMe object at 0x0000025B7A235310>
+> File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 202, in _start_one
+    await c.start()
+          │ └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A2325D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function BaseJob._start at 0x0000025B7A1D74C0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A2325D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 39, in _start
+    self.step_specs = [self._resolve_step(raw) for raw in self.step_configs]
+    │    │             │    │                             │    └ [{'backend': 'status_step'}]
+    │    │             │    │                             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A2325D0>
+    │    │             │    └ <function BaseJob._resolve_step at 0x0000025B7A1D7600>
+    │    │             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A2325D0>
+    │    └ []
+    └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A2325D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 51, in _resolve_step
+    raise ValueError(f"Unregistered backend '{config.backend}' of type '{ComponentEnum.STEP}'")
+                                              │      │                   │             └ <ComponentEnum.STEP: 'step'>
+                                              │      │                   └ <enum 'ComponentEnum'>
+                                              │      └ 'status_step'
+                                              └ ComponentConfig(backend='status_step')
+
+ValueError: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+2026-07-15 11:05:42 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\PPT-Agent\mem_metadata\file_catalog\default.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_store.py:117 | load | Loaded 0 chunks from C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:42 | ERROR | application.py:205 | _start_one | Failed to start job:status: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\__main__.py", line 6, in <module>
+    cli()  # pylint: disable=no-value-for-parameter
+    └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x0000025B419E4CC0>
+           └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x0000025B4193F380>
+         │    └ <function Group.invoke at 0x0000025B419E5BC0>
+         └ <LazyGroup cli>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1970, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x0000025B42064550>
+           │               │       │       └ <function Command.invoke at 0x0000025B419E49A0>
+           │               │       └ <Command app>
+           │               └ <click.core.Context object at 0x0000025B42064550>
+           └ <function Group.invoke.<locals>._process_result at 0x0000025B41925760>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │   │      │    │           └ <click.core.Context object at 0x0000025B42064550>
+           │   │      │    └ <function app_cmd at 0x0000025B41F9C900>
+           │   │      └ <Command app>
+           │   └ <function Context.invoke at 0x0000025B419DFBA0>
+           └ <click.core.Context object at 0x0000025B42064550>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'host': '127.0.0.1', 'port': 8088, 'reload': False, 'log_level': 'info', 'hide_access_paths': ('/console/push-messages', '/c...
+           │         └ ()
+           └ <function app_cmd at 0x0000025B41F9C900>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\cli\app_cmd.py", line 181, in app_cmd
+    uvicorn.run(
+    │       └ <function run at 0x0000025B41AB9C60>
+    └ <module 'uvicorn' from 'C:\\LingLong\\Dev\\Development\\NovaPaw\\env\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+    │      └ <function Server.run at 0x0000025B41AB94E0>
+    └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\uvicorn\server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           │           │    │             │                      │    │      └ <function Config.get_loop_factory at 0x0000025B41A7A520>
+           │           │    │             │                      │    └ <uvicorn.config.Config object at 0x0000025B41F3EF90>
+           │           │    │             │                      └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           │           │    │             └ None
+           │           │    └ <function Server.serve at 0x0000025B41AB9580>
+           │           └ <uvicorn.server.Server object at 0x0000025B7940C6E0>
+           └ <function run at 0x0000025B3E854D60>
+
+  File "asyncio\runners.py", line 196, in run
+
+  File "asyncio\runners.py", line 119, in run
+
+  File "asyncio\base_events.py", line 712, in run_until_complete
+
+  File "asyncio\base_events.py", line 683, in run_forever
+
+  File "asyncio\base_events.py", line 2060, in _run_once
+
+  File "asyncio\events.py", line 89, in _run
+
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 239, in _start_service
+    await self._run_start_method(descriptor, service, is_reused)
+          │    │                 │           │        └ False
+          │    │                 │           └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799CF5C0>
+          │    │                 └ ServiceDescriptor(name='memory_manager', service_class=<function Workspace._register_services.<locals>.<lambda> at 0x0000025B...
+          │    └ <function ServiceManager._run_start_method at 0x0000025B48F52840>
+          └ <novapaw.app.workspace.service_manager.ServiceManager object at 0x0000025B7990E350>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\app\workspace\service_manager.py", line 363, in _run_start_method
+    await start_fn()
+          └ <bound method ReMeLightMemoryManager.start of <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object ...
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\novapaw\agents\memory\reme_light_memory_manager.py", line 145, in start
+    await self._reme.start()
+          │    │     └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          │    └ <reme.reme.ReMe object at 0x0000025B7A143E10>
+          └ <novapaw.agents.memory.reme_light_memory_manager.ReMeLightMemoryManager object at 0x0000025B799CF5C0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function Application._start at 0x0000025B7A2731A0>
+          └ <reme.reme.ReMe object at 0x0000025B7A143E10>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 192, in _start
+    await self._start_one(c)
+          │    │          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A3599D0>
+          │    └ <function Application._start_one at 0x0000025B7A273240>
+          └ <reme.reme.ReMe object at 0x0000025B7A143E10>
+> File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\application.py", line 202, in _start_one
+    await c.start()
+          │ └ <function BaseComponent.start at 0x0000025B79AA80E0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A3599D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\base_component.py", line 215, in start
+    await self._start()
+          │    └ <function BaseJob._start at 0x0000025B7A1D74C0>
+          └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A3599D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 39, in _start
+    self.step_specs = [self._resolve_step(raw) for raw in self.step_configs]
+    │    │             │    │                             │    └ [{'backend': 'status_step'}]
+    │    │             │    │                             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A3599D0>
+    │    │             │    └ <function BaseJob._resolve_step at 0x0000025B7A1D7600>
+    │    │             └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A3599D0>
+    │    └ []
+    └ <reme.components.job.base_job.BaseJob object at 0x0000025B7A3599D0>
+  File "C:\LingLong\Dev\Development\NovaPaw\env\Lib\site-packages\reme\components\job\base_job.py", line 51, in _resolve_step
+    raise ValueError(f"Unregistered backend '{config.backend}' of type '{ComponentEnum.STEP}'")
+                                              │      │                   │             └ <ComponentEnum.STEP: 'step'>
+                                              │      │                   └ <enum 'ComponentEnum'>
+                                              │      └ 'status_step'
+                                              └ ComponentConfig(backend='status_step')
+
+ValueError: Unregistered backend 'status_step' of type 'ComponentEnum.STEP'
+2026-07-15 11:05:42 | INFO | local_file_store.py:185 | dump | Saved 0 chunks to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_store\file_chunks_default_v1.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_graph.py:45 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_graph\default.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\resource.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\dream.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\digest.jsonl.zst
+2026-07-15 11:05:42 | INFO | local_file_catalog.py:33 | dump | Saved 0 nodes to C:\Users\Nova\.novapaw\workspaces\NovaPaw_QA_Agent\mem_metadata\file_catalog\default.jsonl.zst

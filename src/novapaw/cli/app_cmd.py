@@ -101,7 +101,12 @@ def app_cmd(
     if sys.platform == "win32":
         import ctypes
 
-        if not ctypes.windll.shell32.IsUserAnAdmin():
+        # Allow start.py / embedded launchers to skip UAC elevation
+        # since they already manage the process lifecycle and env vars.
+        if (
+            not os.environ.get("NOVAPAW_SKIP_UAC")
+            and not ctypes.windll.shell32.IsUserAnAdmin()
+        ):
             argv0 = os.path.abspath(sys.argv[0])
             args_str = " ".join(
                 f'"{a}"' if " " in a else a for a in sys.argv[1:]
@@ -112,12 +117,14 @@ def app_cmd(
             else:
                 program = argv0
                 params = args_str
+            # Pass NOVAPAW_HOME through to the elevated process
+            home = os.environ.get("NOVAPAW_HOME", "")
             ret = ctypes.windll.shell32.ShellExecuteW(
                 None,
                 "runas",
                 program,
                 params,
-                None,
+                os.path.dirname(argv0) or None,
                 1,
             )
             if ret <= 32:

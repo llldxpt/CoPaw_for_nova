@@ -113,6 +113,8 @@ def start_backend(debug=False, host="127.0.0.1", port=8088):
     print("正在启动 NovaPaw 后端服务...")
     project_root = get_project_root()
     os.environ["NOVAPAW_HOME"] = str(project_root)
+    # start.py 管理进程生命周期，跳过 app_cmd 的 UAC 提权
+    os.environ["NOVAPAW_SKIP_UAC"] = "1"
 
     cmd = [
         sys.executable, "-m", "novapaw", "app",
